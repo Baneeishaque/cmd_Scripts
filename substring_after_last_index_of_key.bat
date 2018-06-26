@@ -11,7 +11,7 @@ if "!S:~%I%,1!"=="\" set L=%I%
 set /a I+=1
 goto l
 :ld
-echo %L%
+echo Last Index of \ : %L%
 SET /A L+=1
 ::SET SUBSTRING=%S:~0,12%
 CALL SET SUBSTRING=%%S:~%L%%%
