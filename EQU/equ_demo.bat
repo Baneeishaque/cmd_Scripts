@@ -4,7 +4,7 @@ set /A failed=0
 set /A completed=0
 set /A total=0
 
-for /F "tokens=1" %%a in (test.txt) do (
+for /F "tokens=1" %%a in (equ_test.txt) do (
  if !counter! EQU 3 (set /A failed=%%a)
  if !counter! EQU 9 (set /A completed=%%a)
  if !counter! EQU 6 (set /A total=%%a)
