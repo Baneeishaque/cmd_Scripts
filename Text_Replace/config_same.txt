@@ -1,6 +1,0 @@
-Sample line 0
-Sample line 1
-#        forward-socks5   /               127.0.0.1:9050 .
-Sample line 2
-Sample line 3
-Sample line 4
