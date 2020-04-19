@@ -8,7 +8,6 @@ Set /P adb_kill=Kill adb (Y/N - default is No) :
 if "%adb_kill%"=="Y" (
 
     adb kill-server
-    
  )
 
 adb tcpip 5555
@@ -21,7 +20,7 @@ If "%choice%"=="N" (
  
     adb connect 192.168.43.1:5555
     REM adb -s 192.168.43.1:5555 usb
-    
+	scrcpy -s 192.168.43.1:5555
  )
 
 If "%choice%"=="N" (
@@ -29,8 +28,7 @@ If "%choice%"=="N" (
     :: Echo %ip%
     adb connect %ip%:5555
     REM adb -s %ip%:5555 usb
-    
+    scrcpy -s %ip%:5555
  )
  
 :: Pause 
-scrcpy -s %ip%:5555
