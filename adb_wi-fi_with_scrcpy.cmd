@@ -20,7 +20,7 @@ If "%choice%"=="N" (
  
     adb connect 192.168.43.1:5555
     REM adb -s 192.168.43.1:5555 usb
-	scrcpy -s 192.168.43.1:5555
+	scrcpy -s 192.168.43.1:5555 -b2m -m800
  )
 
 If "%choice%"=="N" (
@@ -28,7 +28,7 @@ If "%choice%"=="N" (
     :: Echo %ip%
     adb connect %ip%:5555
     REM adb -s %ip%:5555 usb
-    scrcpy -s %ip%:5555
+    scrcpy -s %ip%:5555 -b2m -m800
  )
  
 :: Pause 
